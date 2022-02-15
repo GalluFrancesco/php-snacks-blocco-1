@@ -1,0 +1,26 @@
+<?php
+    $name=$_GET["name"];
+    $mail=$_GET["mail"];
+    $age=$_GET["age"];
+    $verified=[];
+
+    if(strlen($name)>3 &&
+    (strpos($mail, ".") && strpos($mail, "@")) &&
+    is_numeric($age)){
+        echo "Accesso riuscito";
+    }else{
+        echo "Accesso negato";
+    }
+    //  if( strpos($mail, ".") && strpos($mail, "@")){
+    //      $verified[]=true;
+    //  }
+    //  if(is_numeric($age)){
+    //      $verified[]=true;
+    //  }
+
+    //  if(in_array(false,$verified)){
+    //      echo "Accesso negato";
+    //  }else{
+    //     echo "Accesso riuscito";
+    //  }
+?>
